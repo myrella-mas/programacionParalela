@@ -11,7 +11,7 @@ int main(int argc, char* argv[])
     MPI_Comm_size(MPI_COMM_WORLD, &size);
     if(size != 4)
     {
-        printf("This application is meant to be run with 4 processes.\n");
+        printf("Esta aplicacion corre con 4 procesos.\n");
         MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
     }
  
