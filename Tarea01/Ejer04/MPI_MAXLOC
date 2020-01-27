@@ -14,7 +14,7 @@ MPI_Comm_rank(MPI_COMM_WORLD, &myrank);
         in[i].rank = myrank; 
     } 
     MPI_Reduce( in, out, 30, MPI_DOUBLE_INT, MPI_MAXLOC, root, comm ); 
-    /* At this point, the answer resides on process root 
+    /* En esta posicion(Rank) se encuentra el resultado
      */ 
     if (myrank == root) { 
         /* read ranks out 
