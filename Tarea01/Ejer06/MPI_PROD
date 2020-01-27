@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <mpi.h>
+
+int main(int argc, char* argv[])
+{
+    MPI_Init(&argc, &argv);
+ 
+
+    int size;
+    MPI_Comm_size(MPI_COMM_WORLD, &size);
+    if(size != 4)
+    {
+        printf("Puede correr con 4 procesos.\n");
+        MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
+    }
+ 
+    // Se establece la posicion principal
+    int root_rank = 0;
+ 
+    // Obtiene la posicion
+    int my_rank;
+    MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
+ 
+    // Cada proceso envia su posicion y el proceso principal reune los resultados
+    int my_value = my_rank + 1;
+    int reduction_result = 0;
+    MPI_Reduce(&my_value, &reduction_result, 1, MPI_INT, MPI_PROD, root_rank, MPI_COMM_WORLD);
+ 
+    if(my_rank == root_rank)
+    {
+        printf("El producto de todos los valores es %d.\n", reduction_result);
+    }
+ 
+    MPI_Finalize();
+ 
+    return EXIT_SUCCESS;
+}
