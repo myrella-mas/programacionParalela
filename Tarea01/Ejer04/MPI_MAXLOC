@@ -1,3 +1,15 @@
+/*
+ ============================================================================
+ Name        : MPI_MAXLOC.c
+ Author      : Myrella
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello MPI World in C 
+ ============================================================================
+ */
+
+
+
 /* Cada arreglo tiene 30 : ain[30] 
      */ 
     double ain[30], aout[30]; 
