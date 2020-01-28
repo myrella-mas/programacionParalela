@@ -1,3 +1,14 @@
+
+/*
+ ============================================================================
+ Name        : MPI_MINLOC.c
+ Author      : Myrella
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello MPI World in C 
+ ============================================================================
+ */
+
 #define  LEN   1000 
  
 float val[LEN];        /* valores locales del array */ 
