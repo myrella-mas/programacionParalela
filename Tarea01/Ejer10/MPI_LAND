@@ -1,3 +1,13 @@
+/*
+ ============================================================================
+ Name        : MPI_LAND.c
+ Author      : Myrella
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello MPI World in C 
+ ============================================================================
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
