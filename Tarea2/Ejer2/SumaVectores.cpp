@@ -1,3 +1,14 @@
+  
+/*
+ ============================================================================
+ Name        : SumaVectores.c
+ Author      : Myrella Mas
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Compute Pi in MPI C++
+ ============================================================================
+ */
+
 #include <stdio.h>
 #include <mpi.h>
 #include <stdlib.h>
