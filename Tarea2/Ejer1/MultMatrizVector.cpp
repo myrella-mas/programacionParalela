@@ -1,3 +1,17 @@
+  
+/*
+ ============================================================================
+ Name        : MultMatrizVector.c
+ Author      : Myrella Mas
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Compute Pi in MPI C++
+ ============================================================================
+ */
+
+
+
+
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
